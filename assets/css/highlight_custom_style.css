@@ -1,0 +1,52 @@
+.cmb-type-group .cmb-remove-field-row, .cmb-type-group .cmb-repeat-group-field, .postbox-container .cmb-remove-field-row, .postbox-container .cmb-repeat-group-field{
+	padding-top: 0px !important;
+	padding-bottom: 10px !important;
+	
+}
+.cmb-type-group .cmb2-wrap>.cmb-field-list>.cmb-row, .postbox-container .cmb2-wrap>.cmb-field-list>.cmb-row {
+    padding: 5px 0 !important;
+    margin-bottom: 0px !important;
+}
+
+.highlight_info_carousel {
+	padding:10px;
+	width: 96%;
+    margin-left: 24px;
+}
+.highlight-notice {
+   background: #9b8fd8;
+   color: #fff;
+   margin-left: 0px;
+}
+
+.highlight-notice {
+   border-left-color: #f50029;
+}
+
+.counter-class{
+  display: none !important;
+}
+
+div.hightlight-verticle-wrap .hightlight-verticle-underline {
+ 
+  font-size: 18px;
+  line-height: 20px !important;
+}
+
+div.hightlight-horizontal-wrap .hightlight-horizontal-underline {
+ 
+  font-size: 18px;
+  line-height: 20px !important;
+  display: inline-block;
+}
+
+.dn88shortcode-clip input{
+  width: 80%;
+    font-size: 12px;
+
+}
+.dn88shortcode-clip .btn {
+  height: 30px;
+  margin: 0 -10px 0;
+  line-height: 24px;
+}

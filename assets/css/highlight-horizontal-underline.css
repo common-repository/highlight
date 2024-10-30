@@ -1,0 +1,34 @@
+div.hightlight-horizontal-wrap{
+  display: block;
+  width: 100%;
+}
+div.hightlight-horizontal-wrap .hightlight-horizontal-underline {
+
+  --thickness: .1em;
+  --strike: 0;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat 
+              right bottom / calc(var(--strike) * 100%) var(--thickness);
+  background-image: linear-gradient(#ffa50029, #ffa50051, #ffa500);
+  transition: background-size .4s ease;
+
+  
+}
+
+div.hightlight-horizontal-wrap .hightlight-horizontal-underline:hover {
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat right bottom / calc(var(--strike) * 100%) var(--thickness);
+    background-image: linear-gradient(#ffa50029, #ffa5005f, #ffa500);
+    transition: background-size .4s ease;
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
+}
+
+div.hightlight-horizontal-wrap .hightlight-horizontal-underline:before {
+  width: 0;
+}
+
+div.hightlight-horizontal-wrap:hover .hightlight-horizontal-underline:before {
+  width: calc(100% + 8px);
+  z-index: 1;
+}
+
+

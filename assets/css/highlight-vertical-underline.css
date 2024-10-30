@@ -1,0 +1,31 @@
+div.hightlight-verticle-wrap {
+  display: block;
+  width: 100%;
+}
+div.hightlight-verticle-wrap .hightlight-verticle-underline {
+  --thickness: .1em;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat right bottom / calc(var(--strike) * 100%) var(--thickness);
+  background-image: linear-gradient(#ffa50021, #ffa50051, #ffa500);
+  transition: background-size .4s ease;
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
+  display: inline;
+}
+div.hightlight-verticle-wrap .hightlight-verticle-underline:hover{
+  --thickness: 1em;
+  background: linear-gradient(90deg, transparent, currentColor 0) no-repeat right bottom / calc(var(--strike) * 100%) var(--thickness);
+  background-image: linear-gradient(#ffa50021, #ffa50051, #ffa500);
+  transition: background-size .4s ease;
+  --strike: 1; /* "1" means "true" (show the strike line) */
+  background-position-x: left;
+  display: inline;
+}
+div.hightlight-verticle-wrap .hightlight-verticle-underline:before {
+  width: calc(100% + 8px);
+}
+
+div.hightlight-verticle-wrap:hover .hightlight-verticle-underline:before {
+  height: 45%;
+  z-index: 1;
+}
+
